@@ -1,8 +1,24 @@
 aid: enrich
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/enrich.png
 name: enrich
-description: enrich is a company surfaced as a portfolio company of bloomberg-beta, cowboy-ventures and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Enrich is a private, invite-only membership network for senior technology leaders — VPs,
+  Directors, and CXOs from companies including Google, Slack, Anthropic, and OpenAI. It runs peer-led
+  conversations with executive coaching, curated small-group and monthly in-person dinners, expert-led
+  operator discussions, topic-based peer groups (organizational design, career transitions), and a private
+  Slack community for real-time peer advice. Backed by Bloomberg Beta and Cowboy Ventures, and added to the
+  API Evangelist network as a VC-portfolio lead. Enrich publishes no public developer API, SDK, or API
+  documentation surface — it is a community/membership product, not an API provider.
 url: https://raw.githubusercontent.com/api-evangelist/enrich/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +29,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Membership Network
+- Executive Community
+- Professional Development
+- Networking
+- Technology Leaders
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/enrich-domain-security.yml
 - type: Website
   url: https://www.joinenrich.com/
+- type: SignUp
+  url: https://www.joinenrich.com/apply
+- type: TermsOfService
+  url: https://www.joinenrich.com/terms
+- type: PrivacyPolicy
+  url: https://www.joinenrich.com/privacy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
